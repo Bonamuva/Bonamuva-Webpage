@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admissions — Bonamuva Primary School</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/site.js"></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Bonamuva Primary School home"><img src="images/bonamuva_logo.jpg" alt="Bonamuva logo" class="logo-img"><div>
+        <h1 class="school-name">Bonamuva Primary School</h1>
+        <div class="school-sub">The Star of Hope — Eshowe</div>
+      </div></a>
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="principal.html">Principal</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    </div>
+    <div id="mobileNav" class="mobile-nav" style="display:none" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="principal.html">Principal</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <main class="container" id="main">
+<section class="card fade-in">
+  <h2>Admissions</h2>
+  <p>Bonamuva Primary School welcomes new learners where space is available. Below is the current status of vacancies and the admissions procedure.</p>
+
+  <h3>Current Vacancies</h3>
+  <div class="vacancy card small-card">
+    <strong>Grade R – 2 spaces available</strong>
+    <p class="small">Placement is subject to documentation and interview. Please contact the school office to enquire and reserve a place.</p>
+  </div>
+
+  <div class="vacancy card small-card">
+    <strong>Grade 4 – 1 space available</strong>
+    <p class="small">Placement will be assessed based on previous school records and an entrance assessment.</p>
+  </div>
+
+  <h3>How to apply</h3>
+  <ol>
+    <li>Download and complete the official admissions form (available at the school office).</li>
+    <li>Submit the form together with the learner's birth certificate, latest school report (if applicable), proof of residence and vaccination records.</li>
+    <li>Attend a short interview/assessment with the school if required.</li>
+  </ol>
+
+  <h3>Online application (request only)</h3>
+  <form onsubmit="event.preventDefault();alert('This demo form does not submit: please submit documents in person or email BONAMUVA-PS@kznschools.gov.za');" class="card small-card">
+    <label>Learner full name<br><input required name="learner_name" placeholder="e.g. Thandiwe Dlamini"></label>
+    <div style="display:flex;gap:12px;margin-top:8px;flex-wrap:wrap">
+      <label style="flex:1">Date of birth<br><input type="date" name="dob"></label>
+      <label style="flex:1">Applying for grade<br><input name="grade" placeholder="Grade 1"></label>
+    </div>
+    <label style="display:block;margin-top:8px">Parent / guardian contact number<br><input required name="parent_contact" placeholder="082 810 7344"></label>
+    <button class="btn" style="margin-top:12px">Submit application</button>
+  </form>
+</section>
+  </main>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>© Bonamuva Primary School — All rights reserved</div>
+      <div class="small">881, Genzinsila A, Eshowe • Tel: 082 810 7344 • BONAMUVA-PS@kznschools.gov.za</div>
+    </div>
+  </footer>
+</body>
+</html>
